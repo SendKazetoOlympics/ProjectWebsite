@@ -2,5 +2,14 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 @plugin "daisyui" {
-    themes: dark --default;
-  }
+	themes: dark --default;
+}
+
+@layer base {
+	html {
+		font-family: 'Oswald';
+	}
+	h1 {
+		font-size: var(--text-6xl);
+	}
+}
